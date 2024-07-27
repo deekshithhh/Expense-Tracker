@@ -18,17 +18,7 @@
   color: #ffffff;
 }
 
-.boxheader > span {
-  font-weight: 700;
-}
 
-.boxheader > .green {
-  color: rgb(92, 240, 92);
-}
-
-.boxheader > .red {
-  color: rgb(255, 194, 73);
-}
 
 /* Responsive Breakpoints */
 
