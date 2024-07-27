@@ -1,0 +1,18 @@
+.btn{
+    border: 0;
+    border-radius: 1.75rem;
+    width: 167px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.addincome{
+    background: #89E148;
+}
+
+.addexpense{
+    background:  #FF3838 
+}
