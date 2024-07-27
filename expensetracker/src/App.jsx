@@ -305,48 +305,34 @@ function App() {
               />
             </div>
             <div className="piesection">
-              {/* {expensesList.length === 0 ? (
-                <>
-                  <div className="emptyPie">
-                    Start adding expenses to visualize your spending! 📈
-                  </div>
-                </>
-              ) : (
-                <>
-                 
-                </>
-              )} */}
-               <PieRepresentation data={expensesList} />
+              <PieRepresentation data={expensesList} />
             </div>
           </div>
           <div className="bottom">
             <div className="transactions">
               <h2 className="secondaryheading">Recent Transactions</h2>
               <div className="transactioncontent">
-
-                
-                    {currentItems.map((transaction, index) => (
-                      <TransactionItem
-                        key={index}
-                        transactionid={index}
-                        transaction={transaction}
-                        editHandler={openEditExpenseModal}
-                        deleteHandler={deleteTransactionItem}
-                      />
-                    ))}
-                    <Pagination
-                      totalItems={transactionList.length}
-                      itemsPerPage={itemsPerPage}
-                      currentPage={currentPage}
-                      setCurrentPage={setCurrentPage}
-                    />
-                
+                {currentItems.map((transaction, index) => (
+                  <TransactionItem
+                    key={index}
+                    transactionid={index}
+                    transaction={transaction}
+                    editHandler={openEditExpenseModal}
+                    deleteHandler={deleteTransactionItem}
+                  />
+                ))}
+                <Pagination
+                  totalItems={transactionList.length}
+                  itemsPerPage={itemsPerPage}
+                  currentPage={currentPage}
+                  setCurrentPage={setCurrentPage}
+                />
               </div>
             </div>
             <div className="expenses">
               <h2 className="secondaryheading">Top Expenses</h2>
               <div className="expensecontent">
-              <ExpenseRepresentation data={expensesList} />
+                <ExpenseRepresentation data={expensesList} />
               </div>
             </div>
           </div>
