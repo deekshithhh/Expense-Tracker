@@ -7,7 +7,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const ExpenseRepresentation = ({ data }) => {
+const BarchartComponent = ({ data }) => {
   return (
     <ResponsiveContainer width={"100%"} height={"100%"}>
       <BarChart
@@ -39,4 +39,4 @@ const ExpenseRepresentation = ({ data }) => {
   );
 };
 
-export default ExpenseRepresentation;
+export default BarchartComponent;

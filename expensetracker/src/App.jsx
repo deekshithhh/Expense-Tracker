@@ -1,13 +1,13 @@
 import { useEffect, useState, useRef } from "react";
 import { useSnackbar } from "notistack";
-import WalletDetail from "./components/WalletDetail";
-import TransactionItem from "./components/TransactionItem";
-import PieRepresentation from "./components/PieRepresentation";
-import ExpenseRepresentation from "./components/ExpenseRepresentation";
-import Pagination from "./components/Pagination";
-import AddBalanceModal from "./components/AddBalanceModal";
-import AddExpenseModal from "./components/AddExpenseModal";
-import EditExpenseModal from "./components/EditExpenseModal";
+import WalletDetail from "./components/Card/Card";
+import TransactionItem from "./components/Transactionitem/TransactionItem";
+import PieChartComponent from "./components/PieChart/PieChart";
+import BarchartComponent from "./components/Barchart/BarChart";
+import Pagination from "./components/Pagination/Pagination";
+import AddBalanceModal from "./components/Modal/AddBalanceModal";
+import AddExpenseModal from "./components/Modal/AddExpenseModal";
+import EditExpenseModal from "./components/Modal/EditExpenseModal";
 import "./App.css";
 
 function App() {
@@ -305,7 +305,7 @@ function App() {
               />
             </div>
             <div className="piesection">
-              <PieRepresentation data={expensesList} />
+              <PieChartComponent data={expensesList} />
             </div>
           </div>
           <div className="bottom">
@@ -332,7 +332,7 @@ function App() {
             <div className="expenses">
               <h2 className="secondaryheading">Top Expenses</h2>
               <div className="expensecontent">
-                <ExpenseRepresentation data={expensesList} />
+                <BarchartComponent data={expensesList} />
               </div>
             </div>
           </div>

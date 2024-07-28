@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "./PieRepresentation.css";
+import "./PieChart.css";
 import {
   ResponsiveContainer,
   PieChart,
@@ -31,7 +31,7 @@ const CustomExpenseLegend = ({ payload }) => {
   );
 };
 
-const PieRepresentation = ({ data }) => {
+const PieChartComponent = ({ data }) => {
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
   return (
     <>
@@ -84,4 +84,4 @@ const PieRepresentation = ({ data }) => {
   // );
 };
 
-export default PieRepresentation;
+export default PieChartComponent;

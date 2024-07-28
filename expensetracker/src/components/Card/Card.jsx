@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import "./WalletDetail.css";
-import WalletButton from "./WalletButton";
+import "./Card.css";
+import WalletButton from "../Button/Button";
 
 const WalletDetail = ({
   title,

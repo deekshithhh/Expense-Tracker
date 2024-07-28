@@ -1,6 +1,6 @@
 import "./TransactionItem.css";
 import { PiPizzaThin } from "react-icons/pi";
-import TransactionActionButton from "./TransactionActionButton";
+import TransactionCard from "../TransactionCard/TransactionCard";
 
 const TransactionItem = ({
   transaction,
@@ -26,12 +26,12 @@ const TransactionItem = ({
         <div className="transactionActions">
           <p className="transactionAmount">&#8377;{transaction.amount}</p>
           <div className="actionButtons">
-            <TransactionActionButton
+            <TransactionCard
               action={"remove"}
               transactionid={transactionid}
               clickHandler={deleteHandler}
             />
-            <TransactionActionButton
+            <TransactionCard
               action={"edit"}
               transactionid={transactionid}
               clickHandler={editHandler}

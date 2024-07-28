@@ -1,4 +1,4 @@
-import "./WalletButton.css";
+import "./Button.css";
 
 const WalletButton = ({ text, color, clickevent, type }) => {
   return (

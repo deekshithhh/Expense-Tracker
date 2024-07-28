@@ -1,8 +1,8 @@
-import "./TransactionActionButton.css";
+import "./TransactionCard.module.css";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { GoPencil } from "react-icons/go";
 
-const TransactionActionButton = ({ action, transactionid, clickHandler }) => {
+const TransactionCard = ({ action, transactionid, clickHandler }) => {
   return (
     <>
       <button
@@ -27,4 +27,4 @@ const TransactionActionButton = ({ action, transactionid, clickHandler }) => {
   );
 };
 
-export default TransactionActionButton;
+export default TransactionCard;
